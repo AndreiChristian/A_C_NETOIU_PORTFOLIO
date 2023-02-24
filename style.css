@@ -99,14 +99,14 @@ body {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .container.click .npm{
+  .container.click .npm {
     font-size: 0.7rem;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .container.click .npm{
+  .container.click .npm {
     font-size: 1.3rem;
   }
 }
@@ -117,20 +117,20 @@ body {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .container.click .npm{
+  .container.click .npm {
     font-size: 1.2rem;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .container.click .npm{
+  .container.click .npm {
     font-size: 1.4rem;
   }
 }
 
 @media only screen and (min-width: 2000px) {
-  .container.click .npm{
+  .container.click .npm {
     font-size: 1.6rem;
   }
 }
@@ -311,14 +311,14 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  .container.click .npm{
+  .container.click .npm {
     font-size: 0.7rem;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
-  .one .header{
+  .one .header {
     font-size: 3rem;
   }
   .one .subheader .hello {
@@ -340,7 +340,7 @@ body {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .one .header{
+  .one .header {
     font-size: 5rem;
   }
   .one .subheader .hello {
@@ -358,7 +358,7 @@ body {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .one .header{
+  .one .header {
     font-size: 7rem;
   }
   .one .subheader .hello {
@@ -375,7 +375,7 @@ body {
 }
 
 @media only screen and (min-width: 2000px) {
-  .one .header{
+  .one .header {
     font-size: 7rem;
   }
   .one .subheader .hello {
@@ -469,10 +469,26 @@ body {
   font-family: "Wallpoet", cursive;
   color: white;
   /* margin-bottom: 20vh; */
+  box-sizing: border-box;
+  padding: 5vh 0 !important;
 }
 
-.container.two .text{
-  margin-left: 4vw;
+.container.two .text {
+  margin-left: 2vw;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container.two .text {
+    font-size: 1.3rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container.two .text {
+    font-size: 1.3rem;
+  }
 }
 
 /* CONTAINER THREE */
@@ -578,6 +594,41 @@ body {
   font-size: 3.3rem;
 }
 
+@media only screen and (max-width: 345px) {
+  .front_end,
+  .creative_dev {
+    font-size: 2.2rem;
+  }
+}
+
+@media only screen and (min-width: 350px) {
+  .front_end,
+  .creative_dev {
+    font-size: 2.2rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .front_end,
+  .creative_dev {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .front_end,
+  .creative_dev {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .front_end,
+  .creative_dev {
+    font-size: 3.5rem;
+  }
+}
+
 /* the technologies/programming languages container */
 
 .container.eight {
@@ -585,6 +636,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   overflow: hidden;
+  overflow: visible !important;
 }
 
 .container.eight .main {
@@ -593,11 +645,13 @@ body {
   justify-content: center;
   flex-direction: column;
   margin-top: 10vh;
+  overflow: visible !important;
 }
 
 .container.eight .title {
   font-family: "Zen Tokyo Zoo", cursive;
   font-size: 2.4rem;
+  overflow: visible !important;
 }
 
 .container.eight .text {
@@ -608,6 +662,7 @@ body {
   font-family: "Tourney", cursive;
   /* outline: 2px dotted pink; */
   margin: 1vh 0;
+  overflow-x: visible !important;
   /* border-bottom: 2px solid white; */
 }
 
@@ -617,6 +672,7 @@ body {
 
 .container.eight .letter {
   background-color: transparent;
+  overflow: visible !important;
 }
 
 /* CONTAINER NINE the one with the languages */
@@ -636,6 +692,12 @@ body {
   /* font-style: italic; */
 }
 
+@media only screen and (max-width: 600px) {
+  .container.nine .language {
+    font-size: 2.5rem;
+  }
+}
+
 /* container ten - more about me */
 .container.ten {
   width: 100vw;
@@ -647,93 +709,14 @@ body {
 
 .container.ten .card {
   box-sizing: border-box;
-  border: 1px solid gray;
   width: 98vw;
   height: 9.5vh;
   display: grid;
   place-items: center center;
-  font-size: 2rem;
-  font-family: "Tourney", cursive;
-  /* font-family: "Anton", sans-serif; */
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  /* font-family: "Tourney", cursive; */
+  font-family: "Anton", sans-serif;
   text-align: center;
-}
-
-.container.ten .card:nth-child(1) {
-  border: 0.2rem solid white;
-  /* background-color: white; */
-  font-size: 2.5rem;
-  font-family: "Zen Tokyo Zoo", cursive;
-  color: white;
-}
-
-.container.ten .card:nth-child(2) {
-  border: 0.2rem solid red;
-
-  font-family: "Zen Tokyo Zoo", cursive;
-  color: red;
-  font-size: 2rem;
-}
-
-.container.ten .card:nth-child(3) {
-  border: 0.2rem solid yellow;
-
-  font-family: "Zen Tokyo Zoo", cursive;
-  color: yellow;
-  font-size: 3.8rem;
-}
-
-.container.ten .card:nth-child(4) {
-  border: 0.2rem solid blue;
-
-  font-family: "Zen Tokyo Zoo", cursive;
-  color: blue;
-  font-size: 3.3rem;
-}
-
-.container.ten .card:nth-child(5) {
-  border: 0.2rem solid white;
-
-  font-family: "Zen Tokyo Zoo", cursive;
-  color: white;
-  font-size: 3.8rem;
-}
-.container.ten .card:nth-child(6) {
-  border: 0.2rem solid red;
-
-  font-family: "Zen Tokyo Zoo", cursive;
-  color: red;
-  font-size: 3rem;
-}
-.container.ten .card:nth-child(7) {
-  border: 0.2rem solid white;
-
-  font-family: "Zen Tokyo Zoo", cursive;
-  color: white;
-  font-size: 3.8rem;
-}
-
-.container.ten .card:nth-child(8) {
-  border: 0.2rem solid royalblue;
-
-  font-family: "Zen Tokyo Zoo", cursive;
-  color: royalblue;
-  font-size: 2rem;
-}
-
-.container.ten .card:nth-child(9) {
-  border: 0.2rem solid white;
-
-  font-family: "Zen Tokyo Zoo", cursive;
-  color: white;
-  font-size: 3rem;
-}
-
-.container.ten .card:nth-child(10) {
-  border: 0.2rem solid gold;
-
-  font-family: "Zen Tokyo Zoo", cursive;
-  color: gold;
-  font-size: 2rem;
 }
 
 /* container eleven - the q and a section */
@@ -746,7 +729,8 @@ body {
   flex-direction: column;
   justify-content: start;
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.05rem;
+  font-size: clamp(0.8rem, 2vw, 2rem);
+  overflow: visible !important;
 }
 
 .container.eleven .message {
@@ -755,13 +739,7 @@ body {
   justify-content: flex-start;
   flex-wrap: wrap;
   margin: 0.5vh 0;
-}
-
-.container.eleven .message:nth-child(odd) {
-  align-self: flex-start;
-}
-.container.eleven .message:nth-child(even) {
-  align-self: flex-start;
+  overflow: visible !important;
 }
 
 .container.eleven .message:nth-child(odd) .text {
@@ -812,72 +790,72 @@ body {
   width: 96vw;
 }
 
-.twelve .card {
-  /* width: 45vw; */
+.card {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+}
+
+.card svg {
+  width: clamp(5rem, 7rem, 10rem);
+  height: clamp(5rem, 7rem, 10rem);
+}
+
+.card.two,
+.card.one {
+  border: 2px solid white;
   border-radius: 20px;
-  height: 20vh;
-  /* background-color: palegreen; */
 }
 
-.twelve .card.two {
-  background-color: hsl(0, 30%, 89%);
-  font-family: "Anton", sans-serif;
-  font-size: 2rem;
-  color: black;
-  transform: translateX(-2vh);
-}
-
-.twelve .card.one {
-  font-family: "Anton", sans-serif;
-  font-size: 3rem;
+.card.one {
+  background-color: black;
   z-index: 1;
-  box-sizing: border-box;
+  padding: 1vh 1vw;
 }
 
-.gmail .one {
-  background-color: black;
-  border: 3px solid red;
-  color: red;
+.card.two {
+  z-index: 0;
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-size: 1.5rem;
 }
 
-.twitter .one {
-  background-color: black;
-  border: 3px solid blue;
-  color: blue;
+@media only screen and (max-width: 400px) {
+  .card svg {
+    width: clamp(3rem, 5rem, 7rem);
+    height: clamp(3rem, 5rem, 7rem);
+  }
+  .card.two {
+    font-size: 0.6rem;
+  }
 }
 
-.linkedin .one {
-  background-color: black;
-  border: 3px solid cyan;
-  color: cyan;
+@media only screen and (min-width: 400px) {
+  .card svg {
+    width: clamp(3rem, 5rem, 7rem);
+    height: clamp(3rem, 5rem, 7rem);
+  }
+  .card.two {
+    font-size: 0.8rem;
+  }
 }
 
-.showcase .one {
-  background-color: black;
-  border: 3px solid orange;
-  color: orange;
+@media only screen and (min-width: 700px) {
+  .card svg {
+    width: clamp(3rem, 5rem, 7rem);
+    height: clamp(3rem, 5rem, 7rem);
+  }
+  .card.two {
+    font-size: 1.2rem;
+  }
 }
 
-/* PLAYING AROUND WITH GRID A LITTLE */
-
-.container.hobbies {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1/2fr 1fr 1/2fr;
-  grid-template-rows: 1/2fr 1fr 1/2fr;
-  overflow-x: hidden;
-}
-
-.container.hobbies .hobby {
-  grid-column: 2 / 2;
-  grid-row: 2 / 2;
-  place-items: center;
-}
-
-.container.hobbies img {
-  width: 60vw;
+@media only screen and (min-width: 1200px) {
+  .card svg {
+    width: clamp(3rem, 5rem, 7rem);
+    height: clamp(3rem, 5rem, 7rem);
+  }
+  .card.two {
+    font-size: 1.7rem;
+  }
 }

@@ -185,20 +185,21 @@ ScrollTrigger.create({
 // animation for making the subheader of the first
 // container come to live
 
-const blurAnimation = gsap.timeline().from(".container.two .text", {
-  opacity:0,
-  stagger: 0.1,
-  x:-100
-}).
-to(
-  ".le_menu",
-  {
-    opacity:1,
-    duration: 0.4,
-  },
-  1
-);
-
+const blurAnimation = gsap
+  .timeline()
+  .from(".container.two .text", {
+    opacity: 0,
+    stagger: 0.1,
+    x: -100,
+  })
+  .to(
+    ".le_menu",
+    {
+      opacity: 1,
+      duration: 0.4,
+    },
+    1
+  );
 
 ScrollTrigger.create({
   animation: blurAnimation,
@@ -208,8 +209,9 @@ ScrollTrigger.create({
   // end: " bottom 0%",
   pin: true,
   scrub: true,
-  pinSpacing: false,
-  toggleActions: "play reverse play reverse",
+  pinSpacing: true,
+  // markers: true,
+  toggleActions: "play none none none",
   // i dont see any reason why setting pin spacing to false solves the problem but it does
   // soooooo under no circumstances do not change it
   //  it works, that s the only thing that matters
@@ -262,7 +264,7 @@ const frontEndCreativeDevAnimation = gsap
     //     end: "bottom 10%",
     //     toggleActions: "play reverse play reverse",
     //   },
-    x: -400,
+    x: -window.innerWidth,
     duration: 0.6,
     stagger: {
       each: 0.3,
@@ -277,7 +279,7 @@ const frontEndCreativeDevAnimation = gsap
       //     end: "bottom 20%",
       //     toggleActions: "play reverse play reverse",
       //   },
-      x: 400,
+      x: +window.innerWidth,
       duration: 0.6,
       stagger: {
         each: 0.3,
@@ -835,28 +837,31 @@ const qAndAanimation = gsap
     backgroundColor: "royalblue",
   })
   .to(".container.eleven .message:nth-child(10) .text", {
-    text: "A: I could tell you ... but I think it is better to show you... Is that ok?",
+    text: "Hey sure! Just get in touch and book an interview! I am looking for an internship anyway!",
     duration: 3,
     delay: 1,
     backgroundColor: "slateblue",
-  })
-  .to(".container.eleven .message:nth-child(11) .text", {
-    text: "Q: I think it is ok",
-    duration: 3,
-    delay: 1,
-    backgroundColor: "royalblue",
   });
 
 ScrollTrigger.create({
   animation: qAndAanimation,
   trigger: ".container.eleven",
   start: "top 0%",
-  end: "+4000",
+  end: "+3000",
   pin: true,
   scrub: true,
   pinSpacing: true,
 });
 
+// contact cards scroll triger -container twelve
+// contact cards scroll triger -container twelve
+// contact cards scroll triger -container twelve
+// contact cards scroll triger -container twelve
+// contact cards scroll triger -container twelve
+// contact cards scroll triger -container twelve
+// contact cards scroll triger -container twelve
+// contact cards scroll triger -container twelve
+// contact cards scroll triger -container twelve
 // contact cards scroll triger -container twelve
 
 const contactLinks = gsap
@@ -902,12 +907,12 @@ const contactLinks = gsap
     "<"
   )
   // PORTOFOLIO
-  .from(".showcase .one", {
+  .from(".github .one", {
     xPercent: 51.25,
     duration: 2,
   })
   .from(
-    ".showcase .two",
+    ".github .two",
     {
       xPercent: -40,
       duration: 2,

@@ -1183,3 +1183,92 @@ toggleOnMenu.addEventListener("click", () => menuAnimation.reverse());
 const toggleOffMenu = document.querySelector(".le_menu");
 
 toggleOffMenu.addEventListener("click", () => menuAnimation.play());
+
+const portfolioAnimationOne = gsap
+  .timeline()
+  .from(".portofolio_two div", {
+    opacity: 0,
+    stagger: 0.1,
+    x: -100,
+  })
+  .to(
+    ".le_menu",
+    {
+      opacity: 1,
+      duration: 0.4,
+    },
+    1
+  );
+
+ScrollTrigger.create({
+  animation: portfolioAnimationOne,
+  trigger: ".portofolio_two ",
+  start: "top 80%",
+  end: "bottom 75%",
+  // end: " bottom 0%",
+  pin: false,
+  scrub: true,
+  pinSpacing: false,
+  // markers: true,
+  toggleActions: "play none none none",
+});
+
+
+
+const portfolioAnimationTwo = gsap
+  .timeline()
+  .from(".portofolio_three div", {
+    opacity: 0,
+    stagger: 0.1,
+    x: -100,
+  })
+  .to(
+    ".le_menu",
+    {
+      opacity: 1,
+      duration: 0.4,
+    },
+    1
+  );
+
+ScrollTrigger.create({
+  animation: portfolioAnimationTwo,
+  trigger: ".portofolio_three ",
+  start: "top 80%",
+  end: "bottom 75%",
+  // end: " bottom 0%",
+  pin: false,
+  scrub: true,
+  pinSpacing: false,
+  // markers: true,
+  toggleActions: "play none none none",
+});
+
+const portfolioAnimationThree = gsap
+  .timeline()
+  .from(".portofolio_four div", {
+    opacity: 0,
+    stagger: 0.1,
+    x: -100,
+  })
+  .to(
+    ".le_menu",
+    {
+      opacity: 1,
+      duration: 0.4,
+    },
+    1
+  );
+
+ScrollTrigger.create({
+  animation: portfolioAnimationThree,
+  trigger: ".portofolio_four ",
+  start: "top 80%",
+  end: "bottom 75%",
+  // end: " bottom 0%",
+  pin: false,
+  scrub: true,
+  pinSpacing: false,
+  // markers: true,
+  toggleActions: "play none none none",
+});

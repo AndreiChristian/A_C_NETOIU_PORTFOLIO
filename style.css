@@ -629,6 +629,86 @@ body {
   }
 }
 
+/* CONTAINER SIX */
+/* CONTAINER SIX */
+/* CONTAINER SIX */
+/* CONTAINER SIX */
+
+.portofolio_one,
+.portofolio_two,
+.portofolio_three,
+.portofolio_four,
+.portofolio_five {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 2vw;
+}
+
+.portofolio_one{
+  font-family: "Tourney", cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.portfolio_actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 5vw;
+}
+
+.portofolio_two > div:nth-child(1),
+.portofolio_two > div:nth-child(2),
+.portofolio_two > div:nth-child(3),
+.portofolio_three > div:nth-child(1),
+.portofolio_three > div:nth-child(2),
+.portofolio_three > div:nth-child(3),
+.portofolio_four > div:nth-child(1),
+.portofolio_four > div:nth-child(2),
+.portofolio_four > div:nth-child(3),
+.portofolio_one > div:nth-child(1),
+.portofolio_one > div:nth-child(2),
+.portofolio_one > div:nth-child(3) {
+  font-family: "Train One", cursive;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.portfolio_tech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 5vw;
+  flex-wrap: wrap;
+  overflow: visible !important;
+}
+
+.portfolio_tech div {
+  border: 1px solid white;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  font-family: "Tourney", cursive;
+  box-shadow: 0 0 0 1px white, 0 0 0 2px black, 0 0 0 3px white;
+}
+
+.portfolio_actions, .portfolio_actions a {
+  overflow-x: visible !important;
+}
+
+.portfolio_actions a svg {
+  width: 2rem;
+  stroke: white;
+  padding: 1rem 1rem;
+  border-radius: 50%;
+  border: 0.5px solid white;
+  stroke-width: 0.5;
+  box-shadow: 0 0 0 1px white, 0 0 0 2px black, 0 0 0 3px white;
+}
+
 /* the technologies/programming languages container */
 
 .container.eight {
